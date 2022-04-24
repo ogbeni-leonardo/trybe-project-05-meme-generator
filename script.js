@@ -20,11 +20,9 @@ memeInsert.onchange = (e) => {
 
 const memeContainer = byId('meme-image-container');
 
-const [dashedBorder, doubleBorder, grooveBorder] = [
-  byId('fire'),
-  byId('water'),
-  byId('earth'),
-];
+const dashedBorder = byId('fire');
+const doubleBorder = byId('water');
+const grooveBorder = byId('earth');
 
 dashedBorder.onclick = () => {
   memeContainer.style.border = '3px dashed rgb(255 0 0)';
@@ -38,18 +36,15 @@ grooveBorder.onclick = () => {
   memeContainer.style.border = '6px groove rgb(0 128 0)';
 };
 
-const [meme1, meme2, meme3, meme4] = [
-  byId('meme-1'),
-  byId('meme-2'),
-  byId('meme-3'),
-  byId('meme-4'),
-];
+const meme1 = byId('meme-1');
+const meme2 = byId('meme-2');
+const meme3 = byId('meme-3');
+const meme4 = byId('meme-4');
 
 const memesList = [meme1, meme2, meme3, meme4];
 
-memesList.forEach((meme) => {
-  meme.onclick = () => {
-    console.log('oi');
-    memeImage.setAttribute('src', meme.getAttribute('src'));
-  };
+memesList.forEach((element) => {
+  element.addEventListener('click', (e) => {
+    memeImage.setAttribute('src', e.target.getAttribute('src'));
+  });
 });

@@ -8,25 +8,43 @@
     <title>Project | Meme Generator</title>
 </head>
 <body>
-    <main id="content">
-        <section>
-            <label for="text-input"></label><input type="text" name="text-input" id="text-input" maxlength="60">
-            <label for="meme-insert"></label> <input type="file" name="meme-insert" id="meme-insert" accept="image/*">
-            <div id="meme-image-container">
-                <img id="meme-image"></img>
-                <p id="meme-text"></p>
+    <main>
+        <h1 id="title">Meme Generator</h1>
+
+        <section id="meme-generator">
+            <div id="file">
+                <label for="meme-insert">Escolha um arquivo de imagem: </label>
+                <input type="file" name="meme-insert" id="meme-insert" accept="image/*">
             </div>
-        </section>
-        <section id="border-custom">
-            <button id="fire">Fire</button>
-            <button id="water">Water</button>
-            <button id="earth">Eart</button>
-        </section>
-        <section id="examples">
-            <img src="imgs/meme1.png" id="meme-1" alt="Meme - quando a conta de luz vem alta">
-            <img src="imgs/meme2.png" id="meme-2" alt="Meme da gasolina">
-            <img src="imgs/meme3.png" id="meme-3" alt="Meme da gasolina">
-            <img src="imgs/meme4.png" id="meme-4" alt="Meme fingindo que tem internet com vergonha de pedir a senha do Wi-Fi">
+
+            <div id="centered">
+                <div id="meme-image-container">
+                    <img id="meme-image"></img>
+                    <p id="meme-text"></p>
+                </div>
+
+                <div id="right-container">
+                    <h2>Selecione uma borda</h2>
+                    <div id="border-custom">
+                        <button id="fire">Fire</button>
+                        <button id="water">Water</button>
+                        <button id="earth">Earth</button>
+                    </div>
+                    
+                    <h2>Alguns exemplos</h2>
+                    <div id="meme-examples">
+                        <img src="imgs/meme1.png" id="meme-1" alt="Meme - quando a conta de luz vem alta">
+                        <img src="imgs/meme2.png" id="meme-2" alt="Meme da gasolina">
+                        <img src="imgs/meme3.png" id="meme-3" alt="Meme da gasolina">
+                        <img src="imgs/meme4.png" id="meme-4" alt="Meme fingindo que tem internet com vergonha de pedir a senha do Wi-Fi">
+                    </div>
+                </div>
+            </div>
+
+            <div id="text">
+                <label for="text-input">Digite seu texto aqui: </label>
+                <input type="text" name="text-input" id="text-input" maxlength="60">
+            </div>
         </section>
     </main>
     <script src="script.js"></script>
