@@ -24,3 +24,12 @@ const memeText = byId('meme-text');
 textInput.onkeyup = (e) => {
   memeText.innerText = e.target.value;
 };
+
+const memeInsert = byId('meme-insert');
+const memeImage = byId('meme-image');
+
+memeInsert.onchange = (e) => {
+  console.log(`url("${e.target.value}")`);
+  console.log(URL.createObjectURL(e.target.files[0]));
+  memeImage.setAttribute('src', URL.createObjectURL(e.target.files[0]));
+};
