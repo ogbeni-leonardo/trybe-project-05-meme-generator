@@ -29,7 +29,23 @@ const memeInsert = byId('meme-insert');
 const memeImage = byId('meme-image');
 
 memeInsert.onchange = (e) => {
-  console.log(`url("${e.target.value}")`);
-  console.log(URL.createObjectURL(e.target.files[0]));
-  memeImage.setAttribute('src', URL.createObjectURL(e.target.files[0]));
+  const urlObject = URL.createObjectURL(e.target.files[0]);
+  memeImage.setAttribute('src', urlObject);
+};
+
+const memeContainer = byId('meme-image-container');
+
+const dashedBorder = byId('fire');
+dashedBorder.onclick = () => {
+  memeContainer.style.border = '3px dashed rgb(255 0 0)';
+};
+
+const doubleBorder = byId('water');
+doubleBorder.onclick = () => {
+  memeContainer.style.border = '5px double rgb(0 0 255)';
+};
+
+const grooveBorder = byId('earth');
+grooveBorder.onclick = () => {
+  memeContainer.style.border = '6px groove rgb(0 128 0)';
 };
