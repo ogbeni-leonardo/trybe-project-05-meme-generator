@@ -1,13 +1,13 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Meme Generator
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Este é um simples aplicativo web que permite aos usuários criar memes personalizados utilizando imagens pré-definidas ou fotos próprias. Com a ferramenta de edição fácil de usar, os usuários podem adicionar texto e formatação para criar memes engraçados e divertidos.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Recursos
+
+- Seleção de imagens pré-definidas ou adição de imagens próprias;
+- Ferramenta de edição de texto simples para adicionar legendas a imagens;
+- Opções de formatação de bordas, como cor e estilo.
+
+## Uso
+
+Faça o clone do repositório e acesse o arquivo `index.html`.
